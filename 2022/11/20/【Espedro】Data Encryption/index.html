@@ -1,0 +1,857 @@
+<!DOCTYPE html><html lang="zh-cn" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>【Espedro】Data Encryption | WRT_Partisan</title><meta name="author" content="WRT_Partisan,ww35446968@outlook.com"><meta name="copyright" content="WRT_Partisan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#c3c1e9"><meta name="description" content="行动代号：Data Encryption">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【Espedro】Data Encryption">
+<meta property="og:url" content="https://wrt-partisan.github.io/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91Data%20Encryption/index.html">
+<meta property="og:site_name" content="WRT_Partisan">
+<meta property="og:description" content="行动代号：Data Encryption">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg">
+<meta property="article:published_time" content="2022-11-19T16:14:17.000Z">
+<meta property="article:modified_time" content="2025-12-21T10:46:32.210Z">
+<meta property="article:author" content="WRT_Partisan">
+<meta property="article:tag" content="Espedro">
+<meta property="article:tag" content="转载">
+<meta property="article:tag" content="故事">
+<meta property="article:tag" content="世界">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "【Espedro】Data Encryption",
+  "url": "https://wrt-partisan.github.io/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91Data%20Encryption/",
+  "image": "https://ooo.0x0.ooo/2025/07/10/OYzror.jpg",
+  "datePublished": "2022-11-19T16:14:17.000Z",
+  "dateModified": "2025-12-21T10:46:32.210Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "UIaNEIs/27c0MeD/hhYU8yq",
+      "url": "https://www.nmbxd1.com/t/44919857"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png"><link rel="canonical" href="https://wrt-partisan.github.io/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91Data%20Encryption/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/wrt/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#373e6b')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#c3c1e9')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&amp;family=Roboto+Slab:wght@100..900&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/wrt/',
+  algolia: undefined,
+  localSearch: {"path":"/wrt/search.json","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":true},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: WRT_Partisan","link":"Link: ","source":"Source: WRT_Partisan","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"You have switched to Traditional Chinese","cht_to_chs":"You have switched to Simplified Chinese","day_to_night":"You have switched to Dark Mode","night_to_day":"You have switched to Light Mode","bgLight":"#c8b4e7","bgDark":"#5b4883","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '【Espedro】Data Encryption',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="/wrt/css/big-counter.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(https://s1.imagehub.cc/images/2026/02/21/e32ee1c3d8112c3597655627946cb412.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png" onerror="this.onerror=null;this.src='/wrt/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/wrt/archives/"><div class="headline">Articles</div><div class="length-num">135</div></a><a href="/wrt/tags/"><div class="headline">Tags</div><div class="length-num">34</div></a><a href="/wrt/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/wrt/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wrt/talk/"><i class="fa-fw fa-solid fa-comment"></i><span> Talk</span></a></li><li><a class="site-page child" href="/wrt/gallery/"><i class="fa-fw fas fa-images"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/wrt/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/wrt/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/wrt/books/"><i class="fa-fw fa-solid fa-book"></i><span> Book</span></a></li><li><a class="site-page child" href="/wrt/games/"><i class="fa-fw fa-solid fa-gamepad"></i><span> Game</span></a></li><li><a class="site-page child" href="/wrt/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/wrt/messageboard/"><i class="fa-fw fa-solid fa-message"></i><span> Messageboard</span></a></li><li><a class="site-page child" href="/wrt/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://ooo.0x0.ooo/2025/07/10/OYzhtU.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/wrt/"><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png" alt="Logo"><span class="site-name">WRT_Partisan</span></a><a class="nav-page-title" href="/wrt/"><span class="site-name">【Espedro】Data Encryption</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/wrt/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wrt/talk/"><i class="fa-fw fa-solid fa-comment"></i><span> Talk</span></a></li><li><a class="site-page child" href="/wrt/gallery/"><i class="fa-fw fas fa-images"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/wrt/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/wrt/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/wrt/books/"><i class="fa-fw fa-solid fa-book"></i><span> Book</span></a></li><li><a class="site-page child" href="/wrt/games/"><i class="fa-fw fa-solid fa-gamepad"></i><span> Game</span></a></li><li><a class="site-page child" href="/wrt/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/wrt/messageboard/"><i class="fa-fw fa-solid fa-message"></i><span> Messageboard</span></a></li><li><a class="site-page child" href="/wrt/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">【Espedro】Data Encryption</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-11-19T16:14:17.000Z" title="Created 2022-11-20 00:14:17">2022-11-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-12-21T10:46:32.210Z" title="Updated 2025-12-21 18:46:32">2025-12-21</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/wrt/categories/Espedro/">Espedro</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">6.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>18mins</span></span><span class="post-meta-separator">|</span><span id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span class="waline-pageview-count" data-path="/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91Data%20Encryption/"><i class="fa-solid fa-spinner fa-spin"></i></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91Data%20Encryption/#post-comment"><span class="waline-comment-count" data-path="/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91Data%20Encryption/"><i class="fa-solid fa-spinner fa-spin"></i></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>行动代号：Data Encryption</p>
+<p>行动参与人数：[未授权]–怀疑有超过4个Muronia陆军标准师级装甲单位，以及至少3个无法确认来源的空中团级单位参与。尚且无法确认其是否可以受到调动。</p>
+<p>行动活动范围：Espedro市区西城区–确认实际的行动范围为Bellrona州全境，包括[未授权]，以及市区中心医院被隔离的区域。</p>
+<p>行动时间：2016年12月24日20时30分–实际行动时间推迟30分钟。</p>
+<p>行动主要目标：</p>
+<p>摧毁所有观测区并消灭全部生物“人群”，尽可能的破坏城市建筑。地面部队禁止离开载具。空中单位飞行禁止逗留在相同已划分区域超过120秒。</p>
+<p>准许接触并消灭全部高危目标。实验性“深渊”模块可无授权自由使用。允许使用[未授权]等轻量化WMD。</p>
+<p>行动持续时间不得少于360分钟。出现意料外伤亡必须尽快派遣后备部队填补空缺。</p>
+<p>行动开始前3小时禁止任何形式的能量摄入。禁止任何未经过血液样本检测，以及3次连续基因测序结果未通过的士兵参与。由于精神原因无法参与者，必须在经过批准后，立刻撤离[确认实际区域–Bellrona州]。其余人员严格遵守规定，违反者可以军法当场处置。</p>
+<p>[已拦截数据–行动结束后由最高作战指挥部通知行动军官，立刻摧毁全部市区内安全区域，并于指定的集结点集合后接受检查，并于获准后方可撤离。]</p>
+<p>[已拦截数据–消灭所有参与行动的非Muronia军方的友军，即国家联盟Espedro特遣师部队]</p>
+<p>[已拦截数据–消灭所有国家联盟观察员，拦截任何数据并摧毁其可能存在的数据报告。]</p>
+<p>[已拦截数据–[未授权]]</p>
+<p>行动授权：</p>
+<p>——Bellrona州最高作战指挥部</p>
+<p>[未授权]</p>
+<hr>
+<p>……</p>
+<p>够了。我们得开始行动了。</p>
+<p>这是……为了Espedro。</p>
+<p>……</p>
+<hr>
+<p><strong>21时18分。</strong></p>
+<p>士兵看着他前方道路上隐约可见的围墙轮廓，向着他身后的队友示意。跟在他身后的其余士兵纷纷从背后的背包里拿出预先配备绊线的地雷，飞快的在通向目标的必经路线上布置一道不起眼的雷区封锁。</p>
+<p>于此同时，士兵则开始用个人电台通讯。</p>
+<p>GW–1–指挥：Gopher Wood全体就位。正在向Beta集结点的外围卸载货物。</p>
+<p>GW–1的通讯耳机中传来那没有感情的应答。</p>
+<p>OG：GW–1，Charon小队的空降计划失败。我们已经与他们失去联系……现在你们必须独自前进。</p>
+<p>GW–1–指挥：明白。货物已经卸载完毕，将开始前往新集结点。</p>
+<p>GW–1带领着士兵们快步向前。他们似乎并不担心这里会有埋伏。这种“自大”一直持续到他们接近到那堵在漆黑的夜色中几乎看不见的围墙。</p>
+<p>GW–1身边的一个士兵脱离了队伍。他来到围墙曾经安装着铁门的入口前，谨慎的探出身体，向着未知的另一侧观察了片刻。</p>
+<p>GW–3：目标内部安全。无可见生物和实体。次要目标不可见……无法确认是否存在敌对武装人员。</p>
+<p>GW–1–指挥：专家，准备探路。</p>
+<p>GW–5–专家：了解。</p>
+<p>队伍里最高大的那个人站出来。他身上披着比其余士兵更厚重的防弹背心和护具，甚至罕见的配备着头盔面罩。不过更加引人注目的，还是他手臂上固定着的，附加大量红蓝色高功率频闪灯的盾牌。</p>
+<p>GW–5架着盾，领着整支队伍径直冲进门内。</p>
+<p>映入眼帘的，是一座学校。或者更准确点儿，一堆曾经是学校的残垣断壁。</p>
+<p>数十辆来自军方和警方的各式车辆杂乱的停放着，将应该是教学楼的建筑包围起来。这其中甚至有着几辆完好无损的主战坦克。这些钢铁造物携带的枪炮都笔直的指向教学楼入口的方向，那里已经化为遍地的瓦砾。</p>
+<p>一行人有条不紊的借助着这些被遗弃的车辆向前推进着。快要抵达教学楼时，GW–1发话了。</p>
+<p>GW–1–指挥：按照预先计划分散。次要目标未出现，视为目标失败。执行主要任务。</p>
+<p>GW–2–指挥：明白。双数，都跟我来。</p>
+<p>GW–2带着另外5人迅速的占领了那堆无人问津的装甲载具，随后快速的分成三队，分别占据两台军用装甲车，以及一辆主战坦克。其中作为工程人员的GW–8在坦克上方的遥控武器站上忙活着，想将某种看起来如同黑匣子造型的装置连接起来。</p>
+<p>随着坦克启动的轰鸣声打破夜空的寂静，GW-1和他带领的5人也已经冲进他们的预定目标地点——学校顶楼走廊中心的教师办公室。</p>
+<p>可惜的是，失望吞没了他们。</p>
+<p>GW–1–指挥：OG。我们抵达了Charlie集结点。V.I.P.不在这里。计划前往Delta集结点。</p>
+<p>OG：了解。我们会尽可能的延长时限。继续探索。</p>
+<p>GW–3：走廊里有动静。</p>
+<p>？？？：“……¡Venceremos! ¡Venceremos!……”</p>
+<p>办公室外的广播突然高声歌唱起来。整支队伍开始高度戒备。站在门边戒备的士兵从胸前的弹药袋里抽出震爆弹，随时准备投掷。</p>
+<p>GW–5–专家：我们明明切断了供电！</p>
+<p>GW–9：他们肯定有“法拉第”。就是不知道他们到底是哪里冒出来的……</p>
+<p>GW–9捏着震爆弹，将眼光停留在楼梯的尽头。</p>
+<p>GW-1-指挥：执行。</p>
+<p>GW–9将震爆弹贴着门缝甩出。爆炸声和刺眼的闪光掩护着他和GW–5从屋里冲出，向着走廊的目标开始射击。而其余人则有序的跟随着他们。</p>
+<p>和他们预想的类似，跟上来的是敌人。不过震爆弹已经让他们变得脆弱无比。十几发快速点射的子弹立刻就让这些生物留下几具头颅被打穿的尸体。</p>
+<p>生物–士兵：败退！败退！失去……目标！败退！</p>
+<p>生物–士兵：行动失败……呃——</p>
+<p>？？？：“¡Al fascimo sabremos vencer！”</p>
+<p>GW–1–指挥：闭嘴吧。</p>
+<p>GW–1抬手一枪打碎了广播，但是高昂的歌声却依然从远方席卷而来。</p>
+<p>GW–1–指挥：GW-2，外面有情况么？我们遭到敌军的袭击。区域内似乎并没有彻底肃清，敌军恢复了部分供电，你们可能需要准备耳塞。</p>
+<p>GW–2–指挥：了解。现在外面的很糟糕。室外能见度正在快速下降。我觉得是有……云彩，飘过来的原因。可能不消多久就会有实体出现。</p>
+<p>GW–1–指挥：我们需要继续探索。无论如何，都不能让更多敌军侵入。</p>
+<p>GW–2–指挥：明白。</p>
+<p>GW–1带着他的队伍随着那队袭击他们的生物的路线快速行进着。尽管有些出人意料，但是那些武装的生物却没有袭击他们。甚至没有设置绊雷陷阱——这让被迫在黑暗中行军的他们得以喘息。</p>
+<p>不过这种庆幸很快就被一声炮响所打断。</p>
+<p>……</p>
+<p>GW–2看着热成像显示屏上闪烁的爆炸微弱火光，紧张的情绪攀附着他额前的汗水深入他的脑海。</p>
+<p>他刚才瞄准的是一个比卡车还要大两倍的不规则移动物体。他并不在乎那是什么，毕竟要自己命的东西都是一样的。但是坦克主炮带给他的安全感并不算强，以至于忙着搜寻目标的他还有负责驾驶的GW-8却不敢因为刚才的命中就怠慢下来。</p>
+<p>机枪飞速转动，将热成像仪上凭空出现的无数光点如同野草一样割除。虽然这三架重机枪的火力依然显得不够，但是却不足以让这些老道的士兵们过分紧张。</p>
+<p>就在他还在紧张的用热成像仪四下搜寻时，距离GW–2不远的一辆友方装甲车动了起来。</p>
+<p>那辆装甲车并不打算留在原地输出火力，而是迅速的向着错综复杂的废弃车辆集群机动。而能让那些队员如此紧张的，是GW-2紧紧的盯着的屏幕正中心，正在飞速移动的一小块圆形光斑。</p>
+<p>光斑在屏幕中扩大。GW–2呵令所有人开始移动，但是他的提醒并不能阻止方才试图逃走的装甲车在几秒的时间里被光斑所击中。</p>
+<p>随后，让人牙酸的金属被变形，折断的粗糙摩擦声顺着GW–2的对讲机灌进他的耳中。</p>
+<p>GW–2–指挥：GW–1，麻烦来了。你们需要尽快！</p>
+<p>GW–6：GW-12！快移位！快！</p>
+<p>对讲机另外一头话音未落，混杂着尖叫的钢铁粉碎的声音便立刻充斥着GW–2的耳畔。</p>
+<p>他知道，那是另外一台友方装甲车装甲板被火箭弹撕裂的声音——里面GW–6和GW–12再没有回话。</p>
+<p>GW–10：艹！那玩意儿把GW–4拖走了！重复，我们的机枪手被抓住了！</p>
+<p>GW–2–指挥：接替他的位置，继续消灭敌军！</p>
+<p>GW–2怒吼着，把正在奋力在军用车辆集群之间逃窜的坦克的主炮对准被光斑袭击的装甲车。</p>
+<p>他瞧着那团光斑逐渐稳定，在热成像仪上变得明亮起来，如同照耀夜空的火炬，驱散着包围装甲车的极端黑暗，也将他用劣质陶瓷打造的僵硬身躯，和被它捏在手中，只剩下半边尚在淌血的身体的士兵照得明亮。</p>
+<p>突然，那寄居在陶瓷身体里的怪物开始凄厉的尖叫起来。这几乎穿透坦克反应装甲的噪音险些让GW–2的手指从加装着“深渊”模块的武器站控制器上挪开——自然，那个小小的模块就是那怪物痛苦的来源。</p>
+<p>他不再迟疑，用坦克主炮朝着那不再可能会飞走的怪物打出致命的一击。在那怪物脸中散发的光芒因此而消散时，GW-2似乎看到，碎裂的瓷片被裹挟着热浪的冲击波所高速抛出，却又迅速的融入黑暗。</p>
+<p>直到从围墙那边射来，用炙热的金属射流将GW-2的身体融化的三发火箭弹将他的思绪彻底剥夺。</p>
+<p>GW–5–专家：滚开！</p>
+<p>GW–5用盾牌护住身体，干脆的将埋伏在拐角的生物直接撞翻。紧随着他的士兵们则默契的将倒地失能的无面怪物爆头，跟在GW–5的身后，在只能瞧见彼此后背的黑暗中飞奔着。</p>
+<p>至于GW–1，则在焦急的尝试定位第6个集结点的具体的位置。</p>
+<p>就在刚才，和他联络的OG突然断线。至于GW–2则是在发出警告后就彻底失联。他的担心已然成真——他们变成了孤军，而生物们正在大规模的从外面返回。</p>
+<p>更糟糕的是，OG的掉线，意味着他们失去了来自外界的信息纠正保险。现在他们必须分出精力来，顶着随时可以招来子弹或者别的攻击的频闪灯，重复着那些没有意义，却又必须主动张口默念的条例。</p>
+<p>GW–9：Zeta集结点到底在哪里？！</p>
+<p>GW–1–指挥：按照规划过的路线……应该是体育馆，或者校医室！</p>
+<p>GW–1不确切的口吻令所有人都更加不安。但是即使如此，这些士兵也没有余力再去争辩。</p>
+<p>生物–士兵：目标……！阻击。逮捕令执行！</p>
+<p>生物–手指：引诱。诱饵，牺牲！冲刺。</p>
+<p>各式各样的武装分子咆哮着从四面八方包抄而至。有些是穿着军服的，但是更多的却是穿着W.R.T.标志性衣物。他们用变形的脸颊上歪斜着的，分化成三份的，或者代替掉下颚的嘴里挤出断续的词汇，推搡着盲目却悍不畏死的更低等的怪物打着头阵，为他们杂乱无章的射击提供些许优势。</p>
+<p>GW–1的队员虽然都是最优秀的战士，却也只能凭借着风险较大的夜视仪和预先演练过无数次的经验和这些似乎无穷无尽的生物周旋。即使他们早已经杀死了数倍于自身的生物，但是距离他们弹尽粮绝也只是时间的问题。如果他们慢下来，他们随时都会被撕碎。</p>
+<p>他们不知疲倦的奔跑着，但是目标却永远不会出现在前方。在GW–1意识到这点之前，他的队伍里出现了第一个牺牲者。</p>
+<p>走在队伍中间的GW-11被一只凭空出现的手抓住拖走。他的身影和尖叫都消失在一间不起眼的教室里，随着教室门被关上而彻底失去希望。其余人并没有时间再去营救他，而且急于杀死用储物柜和课桌封堵道路，形如四人背对背，肩并肩模样的蜘蛛形生物。</p>
+<p>而在他们继续前进时，一服披着军服的干尸从他们面前的教室中摔倒而出。尸体的头颅随之断裂，滚落在他们的脚边，GW-11枯槁而腐烂的面容清晰可见。证明他死因的，是他干瘪的皮肤上斑白的发丝和尚未搅和在一起的大片皱纹。</p>
+<p>他是老死的。</p>
+<p>士兵们看着死去的GW–11，空间上的认知差异和恐惧使他们主动的停下了脚步。</p>
+<p>GW–1–指挥：所有人进那间教室，跳窗出去！留下人掩护队伍！</p>
+<p>GW–1–指挥：要先毁坏密闭空间的完整性……！</p>
+<p>愤怒的GW–1随即将GW–11殒命的教室的门板给直接砸碎，让它不再有关上的可能。然后GW-1便一马当先的冲进去，来到窗前的他举起枪托砸碎玻璃，飞快的从不知何时变成二楼的楼层中翻越而出。</p>
+<p>他滚落在教学楼外的草坪上。然而身处漆黑的环境的他并不能自如的行动，直到他的队友们陆续跟随他的脚步鱼贯而出。</p>
+<p>这是一步险棋——身上挂满闪烁的红蓝色频闪灯的他们在这诡异的黑暗中显眼到随时会被狙击，更何况他们现在站在了开阔地。</p>
+<p>GW–3：呃啊——！</p>
+<p>殿后的GW–3惨叫着从他们逃出来的窗口跌出，而他痛苦的来源，则是一只“眼球”。</p>
+<p>随着GW–3重重的落地——他显然也没意识到，原本在一楼走廊中行动的自己会跑到这里来——他的脸发出清脆的骨骼断裂声，而插在他锁骨边上的厨刀也被持握着刀柄的“眼球”直接没入了GW–3的身体。</p>
+<p>自始至终没有发出任何声音的眼球怪物想将目光对准下一个目标，但是紧接着，一颗子弹就直接将它那不成比例的眼睛打的粉碎。有手掌大小的玻璃体混合着血液和脑脊液喷溅在地上，化作养料。</p>
+<p>面无表情的GW–9踹开怪物抽搐着倒下的尸体，开始检查自己的同僚。</p>
+<p>GW–9：GW–3死了。</p>
+<p>GW–5–专家：……艹。</p>
+<p>GW–1–指挥：专家，你打头阵。其余人，熄灯。</p>
+<p>顷刻间，黑暗吞没了除GW–5以外的所有人。GW–5则启动了他盾牌上的闪光灯，默默的走在队伍的最前方。</p>
+<p>谜样的寂静让氛围变得越发窒息起来。尽管士兵们已经对于全身而退不抱任何希望，但是一丝侥幸仍然在驱使他们继续向前。</p>
+<p>刚才，乃至教学楼正前方的战斗声已经停息。GW–2和他的队伍自然已经覆灭。GW–1尽力不去让自己已经开始激动的情绪失控，只是靠着肢体语言指示最后的队员们低声的背诵这次行动的专用尾页内容。</p>
+<p>忽然间，伴随尖锐破空声的闷响传来，持有盾牌的GW–5的行动顿住。他冷静的朝着大概的方位迅速的点射几枪，非人的哀嚎声立刻回答了他。</p>
+<p>这样的反击持续上演。不知不觉中，最后的4个人竟然循着一路上被击毙的生物来到了一扇双开门前。</p>
+<p>GW–1–指挥：……不对劲。路程还没有走完……</p>
+<p>GW–9：可是地形是对的。绿化，标志，装饰……甚至连生锈的痕迹都和档案上的一样。</p>
+<p>GW–7：我不觉得我们能继续在开阔地行动，长官……总得要试试。</p>
+<p>最终GW–1妥协了。他挥手示意GW-9和GW–7在门两侧待命，而GW-5则负责拉开大门。</p>
+<p>GW–1–指挥：准备好……</p>
+<p>GW–9：嗯？</p>
+<p>此时，GW–1的夜视仪中心捕捉到了一丝异样。</p>
+<p>如同烟尘似的固体物资开始从大门的缝隙中溢出。在这近乎不讲道理的黑暗中，这一切却如同阳光下飘扬的灰尘那般显眼。</p>
+<p>陷阱。</p>
+<p>这个在常规情况下并不可能出现的念头瞬间闪过GW–1的脑海。他大叫着扭开胸前的频闪灯，向后头也不回的逃跑着。</p>
+<p>GW–1–指挥：是实体！撤到GW–5身后去，快啊！</p>
+<p>GW–5–专家：艹！</p>
+<p>体育馆的双开门顷刻间被撞开。一团漆黑却富有着清晰棱角视觉感受的潮水状物体从室内喷涌而出。</p>
+<p>GW–1只感觉一只手抓住了他，将盲目的逃亡着的他甩得转了个圈，最后摔倒到了地面上。等到他抬起脑袋的时候，只看见GW–5那铁塔般矗立的身影，还有他身边呼啸而过的黑色“潮水”，和那些被一点点吞噬的耀眼的红蓝色闪光。</p>
+<p>半分钟后，“潮水”散去。最后站着的只剩下他还有惊魂未定的GW–5。</p>
+<p>GW–5将架在地上的盾牌收起。这个高大的士兵的口中流露出恐惧和绝望的情绪。</p>
+<p>GW–5–专家：我们失败了，是吧？</p>
+<p>GW–5很希望自己的队长能说些什么。不过回答GW–5的，却是GW–1指向体育馆的手指。</p>
+<p>GW–5就顺着那里望去。室内的能见度显著的好，这让夜视仪终于有了点儿用处。他瞧见体育馆正中心的木质地板上正摆着一只箱子。</p>
+<p>平平无奇，塑料材质。这种一眼便能瞧出来的货色就是个普通的弹药箱而已。</p>
+<p>GW–5却欣喜若狂。</p>
+<p>GW–5–专家：那就是V.I.P.！？</p>
+<p>GW–1–指挥：不是也得是了。</p>
+<p>GW–5一把抓起GW–1，两人飞快的关上体育馆的大门，接着马不停蹄的奔向这个非人的V.I.P.</p>
+<p>GW–1感到有些难以置信。但是他瞥见GW–5的热切的眼光，随即放下了戒备，掀开了弹药箱的盖子。</p>
+<p>GW–1–指挥：……这是……？</p>
+<p>GW–5–专家：就是这么个玩意儿?</p>
+<p>GW–1迟疑着，从几乎空荡荡的弹药箱里拿出了他此次任务所求的目标。</p>
+<p>一个普普通通的C4炸药引爆器。还是崭新的。</p>
+<p>他端详着这个简单的设备。上边标注着一行小字。</p>
+<p>“连续按压三次以启动。”</p>
+<p>GW–1–指挥：……看起来我得用这个。</p>
+<p>？？？：别太着急。</p>
+<p>异样的声音从GW–1的对讲机里传来。然而不懂两人仔细的环视四周，一阵引擎的轰鸣声就从室外侵入体育馆里。随后，一台钢铁打造的巨物便碾碎了脆弱的墙壁，直直的冲着他们飞驰而来。</p>
+<p>GW–5–专家：艹！步战车！</p>
+<p>GW–1–指挥：是国家联盟的人！他们居然没被干掉？！</p>
+<p>须臾之间，GW–1做出了决定。</p>
+<p>紧接着，步战车的自动武器站开火，将GW–1打得粉碎。</p>
+<p>步战车GW–5面前停止。大约十几个武装到牙齿的国家联盟士兵从步战车的乘员舱跳出来，随即包围GW–5，迫使他缴械投降。</p>
+<p>？？？：控制住他们。</p>
+<p>国家联盟士兵：TMD混蛋！你们居然想杀我们灭口！？</p>
+<p>国家联盟士兵：该死的叛徒！我就知道你们这些Muronia畜生靠不住！</p>
+<p>国家联盟士兵：那该死的货物在哪里？</p>
+<p>在暴怒的国联军队向着GW–5发泄怒火的时候，一个国联士兵颤抖着从原本是GW–1的那摊碎肉里面将那个起爆器捡了起来。</p>
+<p>起爆器的指示灯反着红光。它被启动了。</p>
+<p>国联的士兵们面面相觑，不知所措。</p>
+<p>国家联盟士兵：别慌。Iceman知道怎么做……</p>
+<p>国家联盟士兵：军医，我们来迟了，货物Khmer Rouge被启动了！</p>
+<p>？？？：……不。</p>
+<p>？？？：你不应该告诉我的。现在……我也知道了。</p>
+<p>？？？：那个……东西，就要死了。</p>
+<p>国家联盟士兵：我们现在怎么办？！</p>
+<p>？？？：……抱歉。</p>
+<p>国联的士兵们质问着对讲机的另一头。他们希望，他们可以得到命令，或者至少是一个答案。<br>
+但是除了死一般的寂静，他们什么都没有听到。</p>
+<hr>
+<p><strong>00时59分。</strong></p>
+<p>检测器显示V.I.P已经启动。我们成功了。</p>
+<p>主要目标“降神”已死的信息正在进行全体通告。</p>
+<p>预计信息被我方全体行动人员所获悉需要1小时。</p>
+<p>“无知瘟疫”项目完成。</p>
+<p>……</p>
+<p>Hudson中学已经可以卫星图像上正常显示。确认次要目标“塔楼”出现。正在联系最近的轰炸机编队执行摧毁任务。预期可以在90分钟内摧毁整个城区。</p>
+<p>被消灭的友军部队痕迹将在任务中被销毁。</p>
+<p>“数据加密”行动结束。</p>
+<p>……</p>
+<p>“翅膀”压制实验成功。实验参与部队已经消灭所有被标记的“翅膀”。简报显示实体强度得到大幅度削弱。</p>
+<p>“黑暗”压制实验成功。确认标准军用探照灯已经能完成实体的消灭任务。</p>
+<p>“眼球”压制实验失败。</p>
+<p>“探员”压制实验失败。“探员”态度变得极其友善，但是拒绝配合。简报显示，“探员”将我方人员视为某种他们信仰的“牧羊人”，并试图以多种形式感谢。尚无法确认这种情况的意义。</p>
+<p>“人群”压制实验失败。未能控制“人群”规律行动。生物仍然可以出现并被“人群”无视。“人群”仍然可以在正常周期内恢复受破坏环境。</p>
+<p>定期观测区观察显示，过去一个月内未出现未归类生物。多种已归类生物确认绝迹。</p>
+<p>综合评价，行动价值极高，效果超过预期的143％。</p>
+<p>预期情况将会保持稳定。Bellrona最高作战指挥部将会逐步解散。最低军事力量将维持封锁。</p>
+<p>以上信息将呈递至总统办公室。</p>
+<p>……</p>
+<hr>
+<p>指挥官。</p>
+<p>干预局的特工刚才未经允许逮捕了一名军医。现在那个人被关押在F.O.B.基地监狱里。</p>
+<p>我想您……理应去看看。继续示弱，我们被赶走的速度会更快的。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://www.nmbxd1.com/t/44919857">UIaNEIs/27c0MeD/hhYU8yq</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://www.nmbxd1.com/t/44919857">https://www.nmbxd1.com/t/44919857</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/wrt/tags/Espedro/">Espedro</a><a class="post-meta__tags" href="/wrt/tags/%E8%BD%AC%E8%BD%BD/">转载</a><a class="post-meta__tags" href="/wrt/tags/%E6%95%85%E4%BA%8B/">故事</a><a class="post-meta__tags" href="/wrt/tags/%E4%B8%96%E7%95%8C/">世界</a></div><div class="post-share"><div class="social-share" data-image="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>Reward</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/wrt/img/hualahuala.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/wrt/img/hualahuala.png" alt="Wechat"/></a><div class="post-qr-code-desc">Wechat</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/wrt/2022/10/22/%E3%80%90Espedro%E3%80%91%E4%BC%A4%E7%97%85%E5%91%98%E5%8C%BB%E5%AD%A6%E6%A3%80%E5%AF%9F%E6%8A%A5%E5%91%8A%E7%AE%80%E6%8A%A5/" title="【Espedro】伤病员医学检察报告简报"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="onerror=null;src='https://uapis.cn/api/v1/random/image'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">【Espedro】伤病员医学检察报告简报</div></div><div class="info-2"><div class="info-item-1">以下为过去一年时间内于Espedro郊区附属城镇，即目前被改造为F.O.B.的Lancin下属战地医院内部产生的医疗记录。</div></div></div></a><a class="pagination-related" href="/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91%E7%BB%88%E7%AB%A0/" title="【Espedro】终章"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="onerror=null;src='https://uapis.cn/api/v1/random/image'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">【Espedro】终章</div></div><div class="info-2"><div class="info-item-1">终章</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/wrt/2021/12/19/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9EEspedro%E5%B8%82%E8%A1%8C%E5%8A%A8%E9%83%A8%E9%98%9F%E4%BA%BA%E5%91%98%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF%E7%99%BB%E8%AE%B0/" title="【Espedro】Bellrona州Espedro市行动部队人员基本信息登记"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-19</div><div class="info-item-2">【Espedro】Bellrona州Espedro市行动部队人员基本信息登记</div></div><div class="info-2"><div class="info-item-1">用于每日外勤与内务人员查证的简易表格。</div></div></div></a><a class="pagination-related" href="/wrt/2021/11/28/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E5%A4%96%E5%8B%A4%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC16%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第16版"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-28</div><div class="info-item-2">【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第16版</div></div><div class="info-2"><div class="info-item-1">一份拥有坚硬的橘色聚合纤维外壳的册子，很薄但是难以损坏。</div></div></div></a><a class="pagination-related" href="/wrt/2021/12/01/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E5%A4%96%E5%8B%A4%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC28%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第28版"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-01</div><div class="info-item-2">【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第28版</div></div><div class="info-2"><div class="info-item-1">一份拥有坚硬的橘色聚合纤维外壳的册子，很薄但是难以损坏。</div></div></div></a><a class="pagination-related" href="/wrt/2021/12/06/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E6%AD%BC%E7%81%AD%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC9%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期歼灭班组守则 第9版"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-06</div><div class="info-item-2">【Espedro】Bellrona州国民警卫队 特殊时期歼灭班组守则 第9版</div></div><div class="info-2"><div class="info-item-1">一份拥有坚硬的橘色聚合纤维外壳的册子，很薄但是难以损坏。</div></div></div></a><a class="pagination-related" href="/wrt/2021/12/04/%E3%80%90Espedro%E3%80%91Espedro%E5%9C%B0%E4%B8%8B%E6%8E%92%E6%B0%B4%E7%B3%BB%E7%BB%9F%E7%A7%98%E5%AF%86%E5%AE%A1%E8%AE%AF%E5%AE%A4%E8%B0%8B%E6%9D%80%E7%8E%B0%E5%9C%BA/" title="【Espedro】Espedro地下排水系统秘密审讯室谋杀现场"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-04</div><div class="info-item-2">【Espedro】Espedro地下排水系统秘密审讯室谋杀现场</div></div><div class="info-2"><div class="info-item-1">由Tier Two侦查小队在Espedro市区“伟大战争纪念公园”区域巡逻时，意外发现因为重炮轰炸而暴露的废旧排水系统中存在着的审讯室。</div></div></div></a><a class="pagination-related" href="/wrt/2021/11/29/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA999%E6%8E%A5%E7%BA%BF%E5%91%98%E5%BD%95%E9%9F%B3/" title="【Espedro】Espedro市区999接线员录音"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-29</div><div class="info-item-2">【Espedro】Espedro市区999接线员录音</div></div><div class="info-2"><div class="info-item-1">由Espedro市区接线员3.Y.5.2.X其在工作中正常录音产生的录音数据。</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png" onerror="this.onerror=null;this.src='/wrt/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">WRT_Partisan</div><div class="author-info-description">The cruelest fate is to have hope and see it crushed before your eyes.</div><div class="site-data"><a href="/wrt/archives/"><div class="headline">Articles</div><div class="length-num">135</div></a><a href="/wrt/tags/"><div class="headline">Tags</div><div class="length-num">34</div></a><a href="/wrt/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/WRT-Partisan"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/WRT-Partisan" target="_blank" title="Github"><i class="fab fa-github" style="color: #15191f;"></i></a><a class="social-icon" href="mailto:ww35446968@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.zhihu.com/people/ltfbwn" target="_blank" title="知乎"><i class="fa-brands fa-zhihu" style="color: #3d70f2;"></i></a><a class="social-icon" href="https://space.bilibili.com/1615632162" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili" style="color: #42ace9;"></i></a><a class="social-icon" href="/wrt/img/wechat.png" target="_blank" title="微信"><i class="fa-brands fa-weixin" style="color: #42ad69;"></i></a><a class="social-icon" href="/wrt/img/qq.png" target="_blank" title="QQ"><i class="fa-brands fa-qq" style="color: #4d8aca;"></i></a><a class="social-icon" href="tel:15109610157" target="_blank" title="电话"><i class="fa-solid fa-phone" style="color: #2b4778;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content"><span style="color:red;">The</span> <span style="color:gold;">last</span> <span style="color:red;">wish</span> <span style="color:gold;">of</span> <span style="color:red;">mine,</span style="color:gold;"> <span style="color:gold;">is</span> <span style="color:red;">to</span> <span style="color:gold;">become</span> <span style="color:red;">that</span> <span style="color:gold;">kind-hearted,</span> <span style="color:red;">and</span> <span style="color:gold;">rational</span> <span style="color:red;">fighter.</span></div></div><div class="sticky_layout"><div class="card-widget card-post-series"><div class="item-headline"><i class="fa-solid fa-layer-group"></i><span>Espedro</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/12/14/%E3%80%90Espedro%E3%80%91%E9%98%B5%E8%90%A5/" title="【Espedro】阵营"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】阵营"></a><div class="content"><a class="title" href="/wrt/2022/12/14/%E3%80%90Espedro%E3%80%91%E9%98%B5%E8%90%A5/" title="【Espedro】阵营">【Espedro】阵营</a><time datetime="2022-12-14T11:36:47.000Z" title="Created 2022-12-14 19:36:47">2022-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/12/04/%E3%80%90Espedro%E3%80%91%E5%90%8E%E8%AE%B0%EF%BC%9AThe%20love%20of%20Odysseus/" title="【Espedro】后记：The love of Odysseus"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】后记：The love of Odysseus"></a><div class="content"><a class="title" href="/wrt/2022/12/04/%E3%80%90Espedro%E3%80%91%E5%90%8E%E8%AE%B0%EF%BC%9AThe%20love%20of%20Odysseus/" title="【Espedro】后记：The love of Odysseus">【Espedro】后记：The love of Odysseus</a><time datetime="2022-12-03T19:04:50.000Z" title="Created 2022-12-04 03:04:50">2022-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/12/03/%E3%80%90Espedro%E3%80%91%E5%BC%82%E5%B8%B8%E5%AE%9E%E4%BD%93%E5%90%88%E9%9B%86/" title="【Espedro】异常实体合集"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】异常实体合集"></a><div class="content"><a class="title" href="/wrt/2022/12/03/%E3%80%90Espedro%E3%80%91%E5%BC%82%E5%B8%B8%E5%AE%9E%E4%BD%93%E5%90%88%E9%9B%86/" title="【Espedro】异常实体合集">【Espedro】异常实体合集</a><time datetime="2022-12-03T13:39:28.000Z" title="Created 2022-12-03 21:39:28">2022-12-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91%E7%BB%88%E7%AB%A0/" title="【Espedro】终章"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】终章"></a><div class="content"><a class="title" href="/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91%E7%BB%88%E7%AB%A0/" title="【Espedro】终章">【Espedro】终章</a><time datetime="2022-11-19T16:20:11.000Z" title="Created 2022-11-20 00:20:11">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91Data%20Encryption/" title="【Espedro】Data Encryption"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Data Encryption"></a><div class="content"><a class="title" href="/wrt/2022/11/20/%E3%80%90Espedro%E3%80%91Data%20Encryption/" title="【Espedro】Data Encryption">【Espedro】Data Encryption</a><time datetime="2022-11-19T16:14:17.000Z" title="Created 2022-11-20 00:14:17">2022-11-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/10/22/%E3%80%90Espedro%E3%80%91%E4%BC%A4%E7%97%85%E5%91%98%E5%8C%BB%E5%AD%A6%E6%A3%80%E5%AF%9F%E6%8A%A5%E5%91%8A%E7%AE%80%E6%8A%A5/" title="【Espedro】伤病员医学检察报告简报"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】伤病员医学检察报告简报"></a><div class="content"><a class="title" href="/wrt/2022/10/22/%E3%80%90Espedro%E3%80%91%E4%BC%A4%E7%97%85%E5%91%98%E5%8C%BB%E5%AD%A6%E6%A3%80%E5%AF%9F%E6%8A%A5%E5%91%8A%E7%AE%80%E6%8A%A5/" title="【Espedro】伤病员医学检察报告简报">【Espedro】伤病员医学检察报告简报</a><time datetime="2022-10-22T05:06:38.000Z" title="Created 2022-10-22 13:06:38">2022-10-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/07/22/%E3%80%90Espedro%E3%80%91%E6%97%A0%E4%BA%BA%E6%9C%BA%E9%81%87%E8%A2%AD%E8%AE%B0%E5%BD%95/" title="【Espedro】无人机遇袭记录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】无人机遇袭记录"></a><div class="content"><a class="title" href="/wrt/2022/07/22/%E3%80%90Espedro%E3%80%91%E6%97%A0%E4%BA%BA%E6%9C%BA%E9%81%87%E8%A2%AD%E8%AE%B0%E5%BD%95/" title="【Espedro】无人机遇袭记录">【Espedro】无人机遇袭记录</a><time datetime="2022-07-22T03:29:24.000Z" title="Created 2022-07-22 11:29:24">2022-07-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/02/14/%E3%80%90Espedro%E3%80%91%E5%B7%B2%E5%89%AA%E8%BE%91%E6%88%98%E5%9C%B0%E5%BD%95%E5%83%8F/" title="【Espedro】已剪辑战地录像"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】已剪辑战地录像"></a><div class="content"><a class="title" href="/wrt/2022/02/14/%E3%80%90Espedro%E3%80%91%E5%B7%B2%E5%89%AA%E8%BE%91%E6%88%98%E5%9C%B0%E5%BD%95%E5%83%8F/" title="【Espedro】已剪辑战地录像">【Espedro】已剪辑战地录像</a><time datetime="2022-02-13T18:44:54.000Z" title="Created 2022-02-14 02:44:54">2022-02-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/01/25/%E3%80%90Espedro%E3%80%91%E7%99%BD%E9%A4%90%E6%A1%8C/" title="【Espedro】白餐桌"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】白餐桌"></a><div class="content"><a class="title" href="/wrt/2022/01/25/%E3%80%90Espedro%E3%80%91%E7%99%BD%E9%A4%90%E6%A1%8C/" title="【Espedro】白餐桌">【Espedro】白餐桌</a><time datetime="2022-01-25T08:49:43.000Z" title="Created 2022-01-25 16:49:43">2022-01-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2022/01/22/%E3%80%90Espedro%E3%80%91%E6%9F%93%E8%A1%80%E7%9A%84%E5%86%9B%E7%94%A8%E8%83%8C%E5%8C%85/" title="【Espedro】染血的军用背包"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】染血的军用背包"></a><div class="content"><a class="title" href="/wrt/2022/01/22/%E3%80%90Espedro%E3%80%91%E6%9F%93%E8%A1%80%E7%9A%84%E5%86%9B%E7%94%A8%E8%83%8C%E5%8C%85/" title="【Espedro】染血的军用背包">【Espedro】染血的军用背包</a><time datetime="2022-01-22T09:34:03.000Z" title="Created 2022-01-22 17:34:03">2022-01-22</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/24/%E3%80%90Espedro%E3%80%91%E5%87%BA%E7%A7%9F%E8%BD%A6%E5%8F%B8%E6%9C%BA%E5%A4%87%E5%BF%98%E5%BD%95/" title="【Espedro】出租车司机备忘录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】出租车司机备忘录"></a><div class="content"><a class="title" href="/wrt/2021/12/24/%E3%80%90Espedro%E3%80%91%E5%87%BA%E7%A7%9F%E8%BD%A6%E5%8F%B8%E6%9C%BA%E5%A4%87%E5%BF%98%E5%BD%95/" title="【Espedro】出租车司机备忘录">【Espedro】出租车司机备忘录</a><time datetime="2021-12-24T14:32:50.000Z" title="Created 2021-12-24 22:32:50">2021-12-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/19/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9EEspedro%E5%B8%82%E8%A1%8C%E5%8A%A8%E9%83%A8%E9%98%9F%E4%BA%BA%E5%91%98%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF%E7%99%BB%E8%AE%B0/" title="【Espedro】Bellrona州Espedro市行动部队人员基本信息登记"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Bellrona州Espedro市行动部队人员基本信息登记"></a><div class="content"><a class="title" href="/wrt/2021/12/19/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9EEspedro%E5%B8%82%E8%A1%8C%E5%8A%A8%E9%83%A8%E9%98%9F%E4%BA%BA%E5%91%98%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF%E7%99%BB%E8%AE%B0/" title="【Espedro】Bellrona州Espedro市行动部队人员基本信息登记">【Espedro】Bellrona州Espedro市行动部队人员基本信息登记</a><time datetime="2021-12-18T18:16:01.000Z" title="Created 2021-12-19 02:16:01">2021-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/14/%E3%80%90Espedro%E3%80%91%E9%A2%87%E6%9C%89%E8%A3%A8%E7%9B%8A%E7%9A%84%E8%B0%88%E8%AF%9D-B/" title="【Espedro】颇有裨益的谈话-B"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】颇有裨益的谈话-B"></a><div class="content"><a class="title" href="/wrt/2021/12/14/%E3%80%90Espedro%E3%80%91%E9%A2%87%E6%9C%89%E8%A3%A8%E7%9B%8A%E7%9A%84%E8%B0%88%E8%AF%9D-B/" title="【Espedro】颇有裨益的谈话-B">【Espedro】颇有裨益的谈话-B</a><time datetime="2021-12-13T20:15:56.000Z" title="Created 2021-12-14 04:15:56">2021-12-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/12/%E3%80%90Espedro%E3%80%91%E5%AE%A1%E8%AE%AF%E5%AE%A4%E5%A4%87%E5%BF%98%E5%BD%95/" title="【Espedro】审讯室备忘录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】审讯室备忘录"></a><div class="content"><a class="title" href="/wrt/2021/12/12/%E3%80%90Espedro%E3%80%91%E5%AE%A1%E8%AE%AF%E5%AE%A4%E5%A4%87%E5%BF%98%E5%BD%95/" title="【Espedro】审讯室备忘录">【Espedro】审讯室备忘录</a><time datetime="2021-12-12T13:58:02.000Z" title="Created 2021-12-12 21:58:02">2021-12-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/08/%E3%80%90Espedro%E3%80%91%E9%A2%87%E6%9C%89%E8%A3%A8%E7%9B%8A%E7%9A%84%E8%B0%88%E8%AF%9D-A/" title="【Espedro】颇有裨益的谈话-A"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】颇有裨益的谈话-A"></a><div class="content"><a class="title" href="/wrt/2021/12/08/%E3%80%90Espedro%E3%80%91%E9%A2%87%E6%9C%89%E8%A3%A8%E7%9B%8A%E7%9A%84%E8%B0%88%E8%AF%9D-A/" title="【Espedro】颇有裨益的谈话-A">【Espedro】颇有裨益的谈话-A</a><time datetime="2021-12-08T11:51:17.000Z" title="Created 2021-12-08 19:51:17">2021-12-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/07/%E3%80%90Espedro%E3%80%91%E6%97%A0%E6%A0%87%E8%AF%86%E5%A4%87%E5%BF%98%E5%BD%95/" title="【Espedro】无标识备忘录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】无标识备忘录"></a><div class="content"><a class="title" href="/wrt/2021/12/07/%E3%80%90Espedro%E3%80%91%E6%97%A0%E6%A0%87%E8%AF%86%E5%A4%87%E5%BF%98%E5%BD%95/" title="【Espedro】无标识备忘录">【Espedro】无标识备忘录</a><time datetime="2021-12-06T16:19:58.000Z" title="Created 2021-12-07 00:19:58">2021-12-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/06/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E6%AD%BC%E7%81%AD%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC9%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期歼灭班组守则 第9版"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Bellrona州国民警卫队 特殊时期歼灭班组守则 第9版"></a><div class="content"><a class="title" href="/wrt/2021/12/06/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E6%AD%BC%E7%81%AD%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC9%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期歼灭班组守则 第9版">【Espedro】Bellrona州国民警卫队 特殊时期歼灭班组守则 第9版</a><time datetime="2021-12-05T18:02:40.000Z" title="Created 2021-12-06 02:02:40">2021-12-06</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/04/%E3%80%90Espedro%E3%80%91Espedro%E5%9C%B0%E4%B8%8B%E6%8E%92%E6%B0%B4%E7%B3%BB%E7%BB%9F%E7%A7%98%E5%AF%86%E5%AE%A1%E8%AE%AF%E5%AE%A4%E8%B0%8B%E6%9D%80%E7%8E%B0%E5%9C%BA/" title="【Espedro】Espedro地下排水系统秘密审讯室谋杀现场"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Espedro地下排水系统秘密审讯室谋杀现场"></a><div class="content"><a class="title" href="/wrt/2021/12/04/%E3%80%90Espedro%E3%80%91Espedro%E5%9C%B0%E4%B8%8B%E6%8E%92%E6%B0%B4%E7%B3%BB%E7%BB%9F%E7%A7%98%E5%AF%86%E5%AE%A1%E8%AE%AF%E5%AE%A4%E8%B0%8B%E6%9D%80%E7%8E%B0%E5%9C%BA/" title="【Espedro】Espedro地下排水系统秘密审讯室谋杀现场">【Espedro】Espedro地下排水系统秘密审讯室谋杀现场</a><time datetime="2021-12-04T14:11:44.000Z" title="Created 2021-12-04 22:11:44">2021-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/03/%E3%80%90Espedro%E3%80%91%E8%AE%BF%E9%97%AE%E8%AE%B0%E5%BD%95-%E5%86%9B%E5%AE%98N.G.T.9.9/" title="【Espedro】访问记录-军官N.G.T.9.9"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】访问记录-军官N.G.T.9.9"></a><div class="content"><a class="title" href="/wrt/2021/12/03/%E3%80%90Espedro%E3%80%91%E8%AE%BF%E9%97%AE%E8%AE%B0%E5%BD%95-%E5%86%9B%E5%AE%98N.G.T.9.9/" title="【Espedro】访问记录-军官N.G.T.9.9">【Espedro】访问记录-军官N.G.T.9.9</a><time datetime="2021-12-03T01:22:40.000Z" title="Created 2021-12-03 09:22:40">2021-12-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/12/01/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E5%A4%96%E5%8B%A4%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC28%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第28版"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第28版"></a><div class="content"><a class="title" href="/wrt/2021/12/01/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E5%A4%96%E5%8B%A4%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC28%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第28版">【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第28版</a><time datetime="2021-12-01T03:41:32.000Z" title="Created 2021-12-01 11:41:32">2021-12-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/30/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA%E9%95%87%E6%9A%B4%E8%AD%A6%E5%91%98%E7%B4%A7%E6%80%A5%E6%97%B6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E5%AE%88%E5%88%99%20%E7%AC%AC2%E7%89%88/" title="【Espedro】Espedro市区镇暴警员紧急时期工作守则 第2版"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Espedro市区镇暴警员紧急时期工作守则 第2版"></a><div class="content"><a class="title" href="/wrt/2021/11/30/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA%E9%95%87%E6%9A%B4%E8%AD%A6%E5%91%98%E7%B4%A7%E6%80%A5%E6%97%B6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E5%AE%88%E5%88%99%20%E7%AC%AC2%E7%89%88/" title="【Espedro】Espedro市区镇暴警员紧急时期工作守则 第2版">【Espedro】Espedro市区镇暴警员紧急时期工作守则 第2版</a><time datetime="2021-11-30T06:39:52.000Z" title="Created 2021-11-30 14:39:52">2021-11-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/29/%E3%80%90Espedro%E3%80%91W.R.T.%E5%AE%A3%E8%A8%80/" title="【Espedro】W.R.T.宣言"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】W.R.T.宣言"></a><div class="content"><a class="title" href="/wrt/2021/11/29/%E3%80%90Espedro%E3%80%91W.R.T.%E5%AE%A3%E8%A8%80/" title="【Espedro】W.R.T.宣言">【Espedro】W.R.T.宣言</a><time datetime="2021-11-29T15:34:41.000Z" title="Created 2021-11-29 23:34:41">2021-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/29/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA999%E6%8E%A5%E7%BA%BF%E5%91%98%E5%BD%95%E9%9F%B3/" title="【Espedro】Espedro市区999接线员录音"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Espedro市区999接线员录音"></a><div class="content"><a class="title" href="/wrt/2021/11/29/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA999%E6%8E%A5%E7%BA%BF%E5%91%98%E5%BD%95%E9%9F%B3/" title="【Espedro】Espedro市区999接线员录音">【Espedro】Espedro市区999接线员录音</a><time datetime="2021-11-29T01:55:54.000Z" title="Created 2021-11-29 09:55:54">2021-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/28/%E3%80%90Espedro%E3%80%91W.R.T.%E6%B5%B7%E6%8A%A5/" title="【Espedro】W.R.T.海报"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】W.R.T.海报"></a><div class="content"><a class="title" href="/wrt/2021/11/28/%E3%80%90Espedro%E3%80%91W.R.T.%E6%B5%B7%E6%8A%A5/" title="【Espedro】W.R.T.海报">【Espedro】W.R.T.海报</a><time datetime="2021-11-28T03:15:01.000Z" title="Created 2021-11-28 11:15:01">2021-11-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/28/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E5%A4%96%E5%8B%A4%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC16%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第16版"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第16版"></a><div class="content"><a class="title" href="/wrt/2021/11/28/%E3%80%90Espedro%E3%80%91Bellrona%E5%B7%9E%E5%9B%BD%E6%B0%91%E8%AD%A6%E5%8D%AB%E9%98%9F%20%E7%89%B9%E6%AE%8A%E6%97%B6%E6%9C%9F%E5%A4%96%E5%8B%A4%E7%8F%AD%E7%BB%84%E5%AE%88%E5%88%99%20%E7%AC%AC16%E7%89%88/" title="【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第16版">【Espedro】Bellrona州国民警卫队 特殊时期外勤班组守则 第16版</a><time datetime="2021-11-27T16:38:25.000Z" title="Created 2021-11-28 00:38:25">2021-11-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91%E8%AE%BAWe%20Require%20Truth%E8%BF%90%E5%8A%A8%E5%AF%B9%E6%82%A8%E5%9C%A8Espedro%E7%94%9F%E6%B4%BB%E7%9A%84%E5%BD%B1%E5%93%8D/" title="【Espedro】论We Require Truth运动对您在Espedro生活的影响"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】论We Require Truth运动对您在Espedro生活的影响"></a><div class="content"><a class="title" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91%E8%AE%BAWe%20Require%20Truth%E8%BF%90%E5%8A%A8%E5%AF%B9%E6%82%A8%E5%9C%A8Espedro%E7%94%9F%E6%B4%BB%E7%9A%84%E5%BD%B1%E5%93%8D/" title="【Espedro】论We Require Truth运动对您在Espedro生活的影响">【Espedro】论We Require Truth运动对您在Espedro生活的影响</a><time datetime="2021-11-27T13:32:02.000Z" title="Created 2021-11-27 21:32:02">2021-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA%E6%89%A7%E5%8B%A4%E8%AD%A6%E5%91%98%E7%B4%A7%E6%80%A5%E6%97%B6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E5%AE%88%E5%88%99%20%E7%AC%AC17%E7%89%88/" title="【Espedro】Espedro市区执勤警员紧急时期工作守则 第17版"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Espedro市区执勤警员紧急时期工作守则 第17版"></a><div class="content"><a class="title" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA%E6%89%A7%E5%8B%A4%E8%AD%A6%E5%91%98%E7%B4%A7%E6%80%A5%E6%97%B6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E5%AE%88%E5%88%99%20%E7%AC%AC17%E7%89%88/" title="【Espedro】Espedro市区执勤警员紧急时期工作守则 第17版">【Espedro】Espedro市区执勤警员紧急时期工作守则 第17版</a><time datetime="2021-11-27T10:34:24.000Z" title="Created 2021-11-27 18:34:24">2021-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91%E6%97%A0%E6%A0%87%E8%AF%86%E7%AC%94%E8%AE%B0%E6%9C%AC/" title="【Espedro】无标识笔记本"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】无标识笔记本"></a><div class="content"><a class="title" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91%E6%97%A0%E6%A0%87%E8%AF%86%E7%AC%94%E8%AE%B0%E6%9C%AC/" title="【Espedro】无标识笔记本">【Espedro】无标识笔记本</a><time datetime="2021-11-27T06:09:01.000Z" title="Created 2021-11-27 14:09:01">2021-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA%E6%89%A7%E5%8B%A4%E8%AD%A6%E5%91%98%E7%B4%A7%E6%80%A5%E6%97%B6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E5%AE%88%E5%88%99%20%E7%AC%AC8%E7%89%88/" title="【Espedro】Espedro市区执勤警员紧急时期工作守则 第8版"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Espedro市区执勤警员紧急时期工作守则 第8版"></a><div class="content"><a class="title" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA%E6%89%A7%E5%8B%A4%E8%AD%A6%E5%91%98%E7%B4%A7%E6%80%A5%E6%97%B6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E5%AE%88%E5%88%99%20%E7%AC%AC8%E7%89%88/" title="【Espedro】Espedro市区执勤警员紧急时期工作守则 第8版">【Espedro】Espedro市区执勤警员紧急时期工作守则 第8版</a><time datetime="2021-11-27T03:21:43.000Z" title="Created 2021-11-27 11:21:43">2021-11-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA999%E6%8E%A5%E7%BA%BF%E5%91%98%E7%B4%A7%E6%80%A5%E6%97%B6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E5%AE%88%E5%88%99%20%E7%AC%AC6%E7%89%88/" title="【Espedro】Espedro市区999接线员紧急时期工作守则 第6版"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzror.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="【Espedro】Espedro市区999接线员紧急时期工作守则 第6版"></a><div class="content"><a class="title" href="/wrt/2021/11/27/%E3%80%90Espedro%E3%80%91Espedro%E5%B8%82%E5%8C%BA999%E6%8E%A5%E7%BA%BF%E5%91%98%E7%B4%A7%E6%80%A5%E6%97%B6%E6%9C%9F%E5%B7%A5%E4%BD%9C%E5%AE%88%E5%88%99%20%E7%AC%AC6%E7%89%88/" title="【Espedro】Espedro市区999接线员紧急时期工作守则 第6版">【Espedro】Espedro市区999接线员紧急时期工作守则 第6版</a><time datetime="2021-11-26T17:00:47.000Z" title="Created 2021-11-27 01:00:47">2021-11-27</time></div></div></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/08/%E5%BC%82%E6%88%96%E7%BA%BF%E6%80%A7%E5%9F%BA/" title="异或线性基"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="异或线性基"/></a><div class="content"><a class="title" href="/wrt/2026/02/08/%E5%BC%82%E6%88%96%E7%BA%BF%E6%80%A7%E5%9F%BA/" title="异或线性基">异或线性基</a><time datetime="2026-02-08T06:21:19.000Z" title="Created 2026-02-08 14:21:19">2026-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/08/%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86/" title="平板电视"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="平板电视"/></a><div class="content"><a class="title" href="/wrt/2026/02/08/%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86/" title="平板电视">平板电视</a><time datetime="2026-02-08T02:54:29.000Z" title="Created 2026-02-08 10:54:29">2026-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/08/%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="平衡树"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="平衡树"/></a><div class="content"><a class="title" href="/wrt/2026/02/08/%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="平衡树">平衡树</a><time datetime="2026-02-08T02:32:05.000Z" title="Created 2026-02-08 10:32:05">2026-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/05/WC2026%E5%B9%BD%E5%AF%82/" title="WC 2026 幽寂"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="WC 2026 幽寂"/></a><div class="content"><a class="title" href="/wrt/2026/02/05/WC2026%E5%B9%BD%E5%AF%82/" title="WC 2026 幽寂">WC 2026 幽寂</a><time datetime="2026-02-05T01:03:22.000Z" title="Created 2026-02-05 09:03:22">2026-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/05/WC2026%E5%B9%BD%E5%AF%82%E3%80%90%E5%88%A0%E5%87%8F%E7%89%88%E3%80%91/" title="WC 2026 幽寂【删减版】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="WC 2026 幽寂【删减版】"/></a><div class="content"><a class="title" href="/wrt/2026/02/05/WC2026%E5%B9%BD%E5%AF%82%E3%80%90%E5%88%A0%E5%87%8F%E7%89%88%E3%80%91/" title="WC 2026 幽寂【删减版】">WC 2026 幽寂【删减版】</a><time datetime="2026-02-05T01:03:22.000Z" title="Created 2026-02-05 09:03:22">2026-02-05</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://ooo.0x0.ooo/2025/07/10/OYFd8I.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;2025 - 2026 By WRT_Partisan</span></div><div class="footer_custom_text">There is no guide to living --- only life itself.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="chat-btn" type="button" title="Chat" style="display:none"><i class="fas fa-message"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/wrt/js/utils.js"></script><script src="/wrt/js/main.js"></script><script src="/wrt/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
+    }
+  }
+
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const applyThemeDefaultsConfig = theme => {
+    if (theme === 'dark-mode') {
+      Chart.defaults.color = "rgba(255, 255, 255, 0.8)"
+      Chart.defaults.borderColor = "rgba(255, 255, 255, 0.2)"
+      Chart.defaults.scale.ticks.backdropColor = "transparent"
+    } else {
+      Chart.defaults.color = "rgba(0, 0, 0, 0.8)"
+      Chart.defaults.borderColor = "rgba(0, 0, 0, 0.1)"
+      Chart.defaults.scale.ticks.backdropColor = "transparent"
+    }
+  }
+
+  // Recursively traverse the config object and automatically apply theme-specific color schemes
+  const applyThemeConfig = (obj, theme) => {
+    if (typeof obj !== 'object' || obj === null) return
+
+    Object.keys(obj).forEach(key => {
+      const value = obj[key]
+      // If the property is an object and has theme-specific options, apply them
+      if (typeof value === 'object' && value !== null) {
+        if (value[theme]) {
+          obj[key] = value[theme] // Apply the value for the current theme
+        } else {
+          // Recursively process child objects
+          applyThemeConfig(value, theme)
+        }
+      }
+    })
+  }
+
+  const runChartJS = ele => {
+    window.loadChartJS = true
+
+    Array.from(ele).forEach((item, index) => {
+      const chartSrc = item.firstElementChild
+      const chartID = item.getAttribute('data-chartjs-id') || ('chartjs-' + index) // Use custom ID or default ID
+      const width = item.getAttribute('data-width')
+      const existingCanvas = document.getElementById(chartID)
+
+      // If a canvas already exists, remove it to avoid rendering duplicates
+      if (existingCanvas) {
+          existingCanvas.parentNode.remove()
+      }
+
+      const chartDefinition = chartSrc.textContent
+      const canvas = document.createElement('canvas')
+      canvas.id = chartID
+
+      const div = document.createElement('div')
+      div.className = 'chartjs-wrap'
+
+      if (width) {
+        div.style.width = width
+      }
+
+      div.appendChild(canvas)
+      chartSrc.insertAdjacentElement('afterend', div)
+
+      const ctx = document.getElementById(chartID).getContext('2d')
+
+      const config = JSON.parse(chartDefinition)
+
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark-mode' : 'light-mode'
+
+      // Set default styles (initial setup)
+      applyThemeDefaultsConfig(theme)
+
+      // Automatically traverse the config and apply dual-mode color schemes
+      applyThemeConfig(config, theme)
+
+      new Chart(ctx, config)
+    })
+  }
+
+  const loadChartJS = () => {
+    const chartJSEle = document.querySelectorAll('#article-container .chartjs-container')
+    if (chartJSEle.length === 0) return
+
+    window.loadChartJS ? runChartJS(chartJSEle) : btf.getScript('https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js').then(() => runChartJS(chartJSEle))
+  }
+
+  // Listen for theme change events
+  btf.addGlobalFn('themeChange', loadChartJS, 'chartjs')
+  btf.addGlobalFn('encrypt', loadChartJS, 'chartjs')
+
+  window.pjax ? loadChartJS() : document.addEventListener('DOMContentLoaded', loadChartJS)
+})()</script><script>(() => {
+  const abcjsInit = () => {
+    const abcjsFn = () => {
+      setTimeout(() => {
+        const sheets = document.querySelectorAll(".abc-music-sheet")
+        for (let i = 0; i < sheets.length; i++) {
+          const ele = sheets[i]
+          if (ele.children.length > 0) continue
+
+          // Parse parameters from data-params attribute
+          let params = {}
+          const dp = ele.getAttribute("data-params")
+          if (dp) {
+            try {
+              params = JSON.parse(dp)
+            } catch (e) {
+              console.error("Failed to parse data-params:", e)
+            }
+          }
+
+          // Merge parsed parameters with the responsive option
+          // Ensures params content appears before responsive
+          const options = { ...params, responsive: "resize" }
+
+          // Render the music score using ABCJS.renderAbc
+          ABCJS.renderAbc(ele, ele.innerHTML, options)
+        }
+      }, 100)
+    }
+
+    if (typeof ABCJS === "object") {
+      abcjsFn()
+    } else {
+      btf.getScript("https://cdn.jsdelivr.net/npm/abcjs/dist/abcjs-basic-min.min.js").then(abcjsFn)
+    }
+  }
+
+  if (window.pjax) {
+    abcjsInit()
+  } else {
+    window.addEventListener("load", abcjsInit)
+  }
+
+  btf.addGlobalFn("encrypt", abcjsInit, "abcjs")
+})()</script><script>(() => {
+  let initFn = window.walineFn || null
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+  const option = null
+
+  const destroyWaline = ele => ele.destroy()
+
+  const initWaline = (Fn, el = document, path = window.location.pathname) => {
+    const waline = Fn({
+      el: el.querySelector('#waline-wrap'),
+      serverURL: 'https://waline-three-ruby.vercel.app/',
+      pageview: true,
+      dark: 'html[data-theme="dark"]',
+      comment: true,
+      ...option,
+      path: isShuoshuo ? path : (option && option.path) || path
+    })
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyWaline = () => {
+        destroyWaline(waline)
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+  }
+
+  const loadWaline = (el, path) => {
+    if (initFn) initWaline(initFn, el, path)
+    else {
+      btf.getCSS('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.css')
+        .then(() => import('https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.min.js'))
+        .then(({ init }) => {
+          initFn = init || Waline.init
+          initWaline(initFn, el, path)
+          window.walineFn = initFn
+        })
+    }
+  }
+
+  if (isShuoshuo) {
+    'Waline' === 'Waline'
+      ? window.shuoshuoComment = { loadComment: loadWaline } 
+      : window.loadOtherComment = loadWaline
+    return
+  }
+
+  if ('Waline' === 'Waline' || !false) {
+    if (false) btf.loadComment(document.getElementById('waline-wrap'),loadWaline)
+    else setTimeout(loadWaline, 0)
+  } else {
+    window.loadOtherComment = loadWaline
+  }
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[Image]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[Link]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[Code]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[Code]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += 'No comments'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'waline-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = async (ele) => {
+    try {
+      const res = await fetch('https://waline-three-ruby.vercel.app/api/comment?type=recent&count=6')
+      const result = await res.json()
+      const walineArray = result.data.map(e => {
+        return {
+          'content': changeContent(e.comment),
+          'avatar': e.avatar,
+          'nick': e.nick,
+          'url': e.url + '#' + e.objectId,
+          'date': e.time || e.insertedAt
+        }
+      })
+      btf.saveToLocal.set(keyName, JSON.stringify(walineArray), 10/(60*24))
+      generateHtml(walineArray, ele)
+    } catch (err) {
+      console.error(err)
+      ele.textContent= "Unable to retrieve comments, please check the configuration"
+    }
+  }
+
+  run(keyName, getComment)
+})</script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script>(() => {
+  window.ChatraID = 'za29DHS9ThQZ5D2Pw'
+  window.Chatra = window.Chatra || function() {
+    (window.Chatra.q = window.Chatra.q || []).push(arguments)
+  }
+
+  btf.getScript('https://call.chatra.io/chatra.js').then(() => {
+    const isChatBtn = true
+    const isChatHideShow = true
+
+    if (isChatBtn) {
+      const close = () => {
+        Chatra('minimizeWidget')
+        Chatra('hide')
+      }
+
+      const open = () => {
+        Chatra('openChat', true)
+        Chatra('show')
+      }
+
+      window.ChatraSetup = { startHidden: true }
+    
+      window.chatBtnFn = () => document.getElementById('chatra').classList.contains('chatra--expanded') ? close() : open()
+
+      document.getElementById('chat-btn').style.display = 'block'
+    } else if (isChatHideShow) {
+      window.chatBtn = {
+        hide: () => Chatra('hide'),
+        show: () => Chatra('show')
+      }
+    }
+  })
+})()</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      true
+        ? (usePjax ? pjax.loadUrl('/wrt/404.html') : window.location.href = '/wrt/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="WHAT DO YOU KNOW WHAT DO YOU PLAY WHAT DO YOU REMEMBER WHAT DO YOU LOVE" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/wrt/js/search/local-search.js"></script></div></div></body></html>

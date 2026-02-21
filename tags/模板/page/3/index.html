@@ -1,0 +1,606 @@
+<!DOCTYPE html><html lang="zh-cn" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Tag: 模板 | WRT_Partisan</title><meta name="author" content="WRT_Partisan,ww35446968@outlook.com"><meta name="copyright" content="WRT_Partisan"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#c3c1e9"><meta name="description" content="Ich hab zulang nur zugeseh n~">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WRT_Partisan">
+<meta property="og:url" content="https://wrt-partisan.github.io/wrt/tags/%E6%A8%A1%E6%9D%BF/page/3/index.html">
+<meta property="og:site_name" content="WRT_Partisan">
+<meta property="og:description" content="Ich hab zulang nur zugeseh n~">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png">
+<meta property="article:author" content="WRT_Partisan">
+<meta property="article:tag" content="OI,Blog,前端,HTML,CSS,JS,Javascript,文化课">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png"><link rel="canonical" href="https://wrt-partisan.github.io/wrt/tags/%E6%A8%A1%E6%9D%BF/page/3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin=""/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/wrt/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#373e6b')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#c3c1e9')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC:wght@300;400;700&amp;family=Roboto+Slab:wght@100..900&amp;display=swap" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/wrt/',
+  algolia: undefined,
+  localSearch: {"path":"/wrt/search.json","preload":true,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"No results found for: ${query}","hits_stats":"${hits} articles found"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":true,"highlightMacStyle":true},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: 'days',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"Author: WRT_Partisan","link":"Link: ","source":"Source: WRT_Partisan","info":"Copyright belongs to the author. For commercial use, please contact the author for authorization. For non-commercial use, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"You have switched to Traditional Chinese","cht_to_chs":"You have switched to Simplified Chinese","day_to_night":"You have switched to Dark Mode","night_to_day":"You have switched to Light Mode","bgLight":"#c8b4e7","bgDark":"#5b4883","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: true,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Tag: 模板',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'tag'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="/wrt/css/big-counter.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(https://s1.imagehub.cc/images/2026/02/21/e32ee1c3d8112c3597655627946cb412.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png" onerror="this.onerror=null;this.src='/wrt/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/wrt/archives/"><div class="headline">Articles</div><div class="length-num">135</div></a><a href="/wrt/tags/"><div class="headline">Tags</div><div class="length-num">34</div></a><a href="/wrt/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/wrt/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wrt/talk/"><i class="fa-fw fa-solid fa-comment"></i><span> Talk</span></a></li><li><a class="site-page child" href="/wrt/gallery/"><i class="fa-fw fas fa-images"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/wrt/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/wrt/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/wrt/books/"><i class="fa-fw fa-solid fa-book"></i><span> Book</span></a></li><li><a class="site-page child" href="/wrt/games/"><i class="fa-fw fa-solid fa-gamepad"></i><span> Game</span></a></li><li><a class="site-page child" href="/wrt/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/wrt/messageboard/"><i class="fa-fw fa-solid fa-message"></i><span> Messageboard</span></a></li><li><a class="site-page child" href="/wrt/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(https://s1.imagehub.cc/images/2026/02/21/9708bf5a0db1b1a492bb6f9a240aff16.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/wrt/"><img class="site-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png" alt="Logo"><span class="site-name">WRT_Partisan</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/wrt/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/wrt/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fa-solid fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/wrt/talk/"><i class="fa-fw fa-solid fa-comment"></i><span> Talk</span></a></li><li><a class="site-page child" href="/wrt/gallery/"><i class="fa-fw fas fa-images"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/wrt/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/wrt/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li><li><a class="site-page child" href="/wrt/books/"><i class="fa-fw fa-solid fa-book"></i><span> Book</span></a></li><li><a class="site-page child" href="/wrt/games/"><i class="fa-fw fa-solid fa-gamepad"></i><span> Game</span></a></li><li><a class="site-page child" href="/wrt/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/wrt/messageboard/"><i class="fa-fw fa-solid fa-message"></i><span> Messageboard</span></a></li><li><a class="site-page child" href="/wrt/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">模板</h1></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/wrt/2025/07/17/01Trie/" title="01Trie"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/17/OYgwBM.png" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="01Trie"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2025/07/17/01Trie/" title="01Trie">01Trie</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-07-17T03:05:32.000Z" title="Created 2025-07-17 11:05:32">2025-07-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-10-29T12:27:36.802Z" title="Updated 2025-10-29 20:27:36">2025-10-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2025/07/17/01Trie/#post-comment"><span class="waline-comment-count" data-path="/wrt/2025/07/17/01Trie/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">把整数视作定长二进制串放入 Trie 里，然后利用 Trie 的结构结合各树上操作瞎搞。</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/wrt/2025/07/17/%E6%9D%BF%E5%AD%90/" title="板子"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="板子"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2025/07/17/%E6%9D%BF%E5%AD%90/" title="板子">板子</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-07-17T03:05:32.000Z" title="Created 2025-07-17 11:05:32">2025-07-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-01-26T13:42:19.145Z" title="Updated 2026-01-26 21:42:19">2026-01-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2025/07/17/%E6%9D%BF%E5%AD%90/#post-comment"><span class="waline-comment-count" data-path="/wrt/2025/07/17/%E6%9D%BF%E5%AD%90/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">各种板子。</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/wrt/2025/07/17/Trie%EF%BC%88%E5%AD%97%E5%85%B8%E6%A0%91%EF%BC%89/" title="Trie（字典树）"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/17/OYgIpc.png" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="Trie（字典树）"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2025/07/17/Trie%EF%BC%88%E5%AD%97%E5%85%B8%E6%A0%91%EF%BC%89/" title="Trie（字典树）">Trie（字典树）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-07-17T02:57:45.000Z" title="Created 2025-07-17 10:57:45">2025-07-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-09-14T03:27:15.524Z" title="Updated 2025-09-14 11:27:15">2025-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2025/07/17/Trie%EF%BC%88%E5%AD%97%E5%85%B8%E6%A0%91%EF%BC%89/#post-comment"><span class="waline-comment-count" data-path="/wrt/2025/07/17/Trie%EF%BC%88%E5%AD%97%E5%85%B8%E6%A0%91%EF%BC%89/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">线性时间复杂度的字符串集合。</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/wrt/2025/07/17/%E7%8A%B6%E5%8E%8BDP/" title="状压DP"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/17/OYg88v.png" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="状压DP"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2025/07/17/%E7%8A%B6%E5%8E%8BDP/" title="状压DP">状压DP</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-07-17T02:51:21.000Z" title="Created 2025-07-17 10:51:21">2025-07-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-07-17T02:56:43.961Z" title="Updated 2025-07-17 10:56:43">2025-07-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2025/07/17/%E7%8A%B6%E5%8E%8BDP/#post-comment"><span class="waline-comment-count" data-path="/wrt/2025/07/17/%E7%8A%B6%E5%8E%8BDP/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">将状态压缩成二进制来保存。</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/wrt/2025/07/17/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%97%E6%B3%95/" title="字符串算法"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/17/OYg21U.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="字符串算法"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2025/07/17/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%97%E6%B3%95/" title="字符串算法">字符串算法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2025-07-17T02:19:10.000Z" title="Created 2025-07-17 10:19:10">2025-07-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-09-14T09:14:46.246Z" title="Updated 2025-09-14 17:14:46">2025-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2025/07/17/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%97%E6%B3%95/#post-comment"><span class="waline-comment-count" data-path="/wrt/2025/07/17/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%AE%97%E6%B3%95/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">关于字符串的线性算法（KMP、Z 函数、Manacher）。</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/wrt/2024/11/02/ST%E8%A1%A8/" title="ST 表"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/17/OYg45B.png" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="ST 表"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2024/11/02/ST%E8%A1%A8/" title="ST 表">ST 表</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-11-02T11:09:00.000Z" title="Created 2024-11-02 19:09:00">2024-11-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-09-14T08:15:53.373Z" title="Updated 2025-09-14 16:15:53">2025-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2024/11/02/ST%E8%A1%A8/#post-comment"><span class="waline-comment-count" data-path="/wrt/2024/11/02/ST%E8%A1%A8/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">用于解决可重复贡献问题的数据结构。</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/wrt/2024/11/02/LCA/" title="LCA"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/16/OYgKQI.png" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="LCA"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2024/11/02/LCA/" title="LCA">LCA</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-11-02T11:07:00.000Z" title="Created 2024-11-02 19:07:00">2024-11-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-09-14T09:04:37.556Z" title="Updated 2025-09-14 17:04:37">2025-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2024/11/02/LCA/#post-comment"><span class="waline-comment-count" data-path="/wrt/2024/11/02/LCA/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">有根树中给出两个点，求离它们最近的公共祖先。</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/wrt/2024/11/02/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" title="最小生成树"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/16/OYgNYM.png" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="最小生成树"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2024/11/02/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" title="最小生成树">最小生成树</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-11-02T11:05:00.000Z" title="Created 2024-11-02 19:05:00">2024-11-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-09-14T09:10:26.717Z" title="Updated 2025-09-14 17:10:26">2025-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2024/11/02/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/#post-comment"><span class="waline-comment-count" data-path="/wrt/2024/11/02/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">Prim 算法和 Kruskal 算法。</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/wrt/2024/11/02/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/16/OYg1bc.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="最短路"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2024/11/02/%E6%9C%80%E7%9F%AD%E8%B7%AF/" title="最短路">最短路</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-11-02T11:03:00.000Z" title="Created 2024-11-02 19:03:00">2024-11-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-09-14T09:11:53.106Z" title="Updated 2025-09-14 17:11:53">2025-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2024/11/02/%E6%9C%80%E7%9F%AD%E8%B7%AF/#post-comment"><span class="waline-comment-count" data-path="/wrt/2024/11/02/%E6%9C%80%E7%9F%AD%E8%B7%AF/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">单源最短路与多源最短路。</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/wrt/2024/11/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C/" title="字符串哈希"><img class="post-bg" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/16/OYgh4v.jpg" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="字符串哈希"></a></div><div class="recent-post-info"><a class="article-title" href="/wrt/2024/11/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C/" title="字符串哈希">字符串哈希</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-11-02T11:00:00.000Z" title="Created 2024-11-02 19:00:00">2024-11-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2025-09-14T09:16:47.146Z" title="Updated 2025-09-14 17:16:47">2025-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/wrt/categories/OI/">OI</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/OI/">OI</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/C/">C++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E7%AE%97%E6%B3%95/">算法</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">模板</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/wrt/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">字符串</a></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-comments"></i><a href="/wrt/2024/11/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C/#post-comment"><span class="waline-comment-count" data-path="/wrt/2024/11/02/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%93%88%E5%B8%8C/"><i class="fa-solid fa-spinner fa-spin"></i></span></a><span class="article-meta-label"> comments</span></span></div><div class="content">把复杂的样本变成数字，以后复杂样本之间的对比，就变成了数字之间的对比。</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/page/2/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/">1</a><a class="page-number" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/page/4/">4</a><a class="extend next" rel="next" href="/wrt/tags/%E6%A8%A1%E6%9D%BF/page/4/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzQ4a.png" onerror="this.onerror=null;this.src='/wrt/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">WRT_Partisan</div><div class="author-info-description">The cruelest fate is to have hope and see it crushed before your eyes.</div><div class="site-data"><a href="/wrt/archives/"><div class="headline">Articles</div><div class="length-num">135</div></a><a href="/wrt/tags/"><div class="headline">Tags</div><div class="length-num">34</div></a><a href="/wrt/categories/"><div class="headline">Categories</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/WRT-Partisan"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/WRT-Partisan" target="_blank" title="Github"><i class="fab fa-github" style="color: #15191f;"></i></a><a class="social-icon" href="mailto:ww35446968@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://www.zhihu.com/people/ltfbwn" target="_blank" title="知乎"><i class="fa-brands fa-zhihu" style="color: #3d70f2;"></i></a><a class="social-icon" href="https://space.bilibili.com/1615632162" target="_blank" title="bilibili"><i class="fa-brands fa-bilibili" style="color: #42ace9;"></i></a><a class="social-icon" href="/wrt/img/wechat.png" target="_blank" title="微信"><i class="fa-brands fa-weixin" style="color: #42ad69;"></i></a><a class="social-icon" href="/wrt/img/qq.png" target="_blank" title="QQ"><i class="fa-brands fa-qq" style="color: #4d8aca;"></i></a><a class="social-icon" href="tel:15109610157" target="_blank" title="电话"><i class="fa-solid fa-phone" style="color: #2b4778;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content"><span style="color:red;">The</span> <span style="color:gold;">last</span> <span style="color:red;">wish</span> <span style="color:gold;">of</span> <span style="color:red;">mine,</span style="color:gold;"> <span style="color:gold;">is</span> <span style="color:red;">to</span> <span style="color:gold;">become</span> <span style="color:red;">that</span> <span style="color:gold;">kind-hearted,</span> <span style="color:red;">and</span> <span style="color:gold;">rational</span> <span style="color:red;">fighter.</span></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/08/%E5%BC%82%E6%88%96%E7%BA%BF%E6%80%A7%E5%9F%BA/" title="异或线性基"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="异或线性基"/></a><div class="content"><a class="title" href="/wrt/2026/02/08/%E5%BC%82%E6%88%96%E7%BA%BF%E6%80%A7%E5%9F%BA/" title="异或线性基">异或线性基</a><time datetime="2026-02-08T06:21:19.000Z" title="Created 2026-02-08 14:21:19">2026-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/08/%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86/" title="平板电视"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="平板电视"/></a><div class="content"><a class="title" href="/wrt/2026/02/08/%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86/" title="平板电视">平板电视</a><time datetime="2026-02-08T02:54:29.000Z" title="Created 2026-02-08 10:54:29">2026-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/08/%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="平衡树"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="平衡树"/></a><div class="content"><a class="title" href="/wrt/2026/02/08/%E5%B9%B3%E8%A1%A1%E6%A0%91/" title="平衡树">平衡树</a><time datetime="2026-02-08T02:32:05.000Z" title="Created 2026-02-08 10:32:05">2026-02-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/05/WC2026%E5%B9%BD%E5%AF%82/" title="WC 2026 幽寂"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="WC 2026 幽寂"/></a><div class="content"><a class="title" href="/wrt/2026/02/05/WC2026%E5%B9%BD%E5%AF%82/" title="WC 2026 幽寂">WC 2026 幽寂</a><time datetime="2026-02-05T01:03:22.000Z" title="Created 2026-02-05 09:03:22">2026-02-05</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/wrt/2026/02/05/WC2026%E5%B9%BD%E5%AF%82%E3%80%90%E5%88%A0%E5%87%8F%E7%89%88%E3%80%91/" title="WC 2026 幽寂【删减版】"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://ooo.0x0.ooo/2025/07/10/OYzOha.webp" onerror="this.onerror=null;this.src='https://uapis.cn/api/v1/random/image'" alt="WC 2026 幽寂【删减版】"/></a><div class="content"><a class="title" href="/wrt/2026/02/05/WC2026%E5%B9%BD%E5%AF%82%E3%80%90%E5%88%A0%E5%87%8F%E7%89%88%E3%80%91/" title="WC 2026 幽寂【删减版】">WC 2026 幽寂【删减版】</a><time datetime="2026-02-05T01:03:22.000Z" title="Created 2026-02-05 09:03:22">2026-02-05</time></div></div></div></div><div class="card-widget" id="card-newest-comments"><div class="item-headline"><i class="fas fa-comment-dots"></i><span>Latest Comments</span></div><div class="aside-list"><span>Loading...</span></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/wrt/categories/" title="View More">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/wrt/categories/Espedro/"><span class="card-category-list-name">Espedro</span><span class="card-category-list-count">31</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/wrt/categories/OI/"><span class="card-category-list-name">OI</span><span class="card-category-list-count">53</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/wrt/categories/THOUGHTS/"><span class="card-category-list-name">THOUGHTS</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/wrt/categories/%E4%BA%8C%E7%BA%A7%E5%AD%A6%E9%99%A2/"><span class="card-category-list-name">二级学院</span><span class="card-category-list-count">20</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/wrt/categories/%E5%89%8D%E7%AB%AF/"><span class="card-category-list-name">前端</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/wrt/categories/%E5%8A%A8%E7%89%A9%E5%9B%AD/"><span class="card-category-list-name">动物园</span><span class="card-category-list-count">10</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/wrt/categories/%E6%95%B4%E6%B4%BB/"><span class="card-category-list-name">整活</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/wrt/categories/%E6%96%87%E5%8C%96%E8%AF%BE/"><span class="card-category-list-name">文化课</span><span class="card-category-list-count">7</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/wrt/tags/OI/" style="font-size: 1.43em; color: rgb(161, 108, 112);">OI</a><a href="/wrt/tags/C/" style="font-size: 1.41em; color: rgb(91, 97, 50);">C++</a><a href="/wrt/tags/%E7%AE%97%E6%B3%95/" style="font-size: 1.39em; color: rgb(162, 195, 125);">算法</a><a href="/wrt/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 1.3em; color: rgb(200, 50, 165);">数据结构</a><a href="/wrt/tags/%E6%A8%A1%E6%9D%BF/" style="font-size: 1.39em; color: rgb(50, 50, 148);">模板</a><a href="/wrt/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 1.32em; color: rgb(55, 75, 180);">题解</a><a href="/wrt/tags/Atcoder/" style="font-size: 1.19em; color: rgb(50, 126, 50);">Atcoder</a><a href="/wrt/tags/%E6%A8%A1%E6%8B%9F%E8%B5%9B/" style="font-size: 1.15em; color: rgb(90, 50, 81);">模拟赛</a><a href="/wrt/tags/%E6%B8%B8%E8%AE%B0/" style="font-size: 1.24em; color: rgb(108, 50, 191);">游记</a><a href="/wrt/tags/NOI/" style="font-size: 1.24em; color: rgb(142, 50, 50);">NOI</a><a href="/wrt/tags/%E6%B2%A1%E6%9C%89%E8%A2%AB%E5%AE%9A%E4%B9%89%E7%9A%84%E6%A0%87%E7%AD%BE/" style="font-size: 1.17em; color: rgb(151, 118, 125);">没有被定义的标签</a><a href="/wrt/tags/STL/" style="font-size: 1.15em; color: rgb(50, 174, 50);">STL</a><a href="/wrt/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 1.19em; color: rgb(50, 106, 161);">字符串</a><a href="/wrt/tags/Espedro/" style="font-size: 1.36em; color: rgb(74, 54, 178);">Espedro</a><a href="/wrt/tags/%E8%BD%AC%E8%BD%BD/" style="font-size: 1.45em; color: rgb(158, 50, 176);">转载</a><a href="/wrt/tags/%E6%95%85%E4%BA%8B/" style="font-size: 1.45em; color: rgb(55, 50, 197);">故事</a><a href="/wrt/tags/%E4%B8%96%E7%95%8C/" style="font-size: 1.45em; color: rgb(172, 153, 195);">世界</a><a href="/wrt/tags/%E6%95%B4%E6%B4%BB/" style="font-size: 1.15em; color: rgb(98, 138, 199);">整活</a><a href="/wrt/tags/%E6%B4%9B%E8%B0%B7/" style="font-size: 1.21em; color: rgb(177, 138, 173);">洛谷</a><a href="/wrt/tags/%E4%BA%8C%E7%BA%A7%E5%AD%A6%E9%99%A2/" style="font-size: 1.34em; color: rgb(114, 50, 114);">二级学院</a><a href="/wrt/tags/%E5%8A%A8%E7%89%A9%E5%9B%AD/" style="font-size: 1.3em; color: rgb(54, 66, 162);">动物园</a><a href="/wrt/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1.21em; color: rgb(88, 138, 194);">数学</a><a href="/wrt/tags/%E6%96%87%E5%8C%96%E8%AF%BE/" style="font-size: 1.26em; color: rgb(95, 79, 85);">文化课</a><a href="/wrt/tags/%E6%96%87%E6%A1%A3/" style="font-size: 1.17em; color: rgb(50, 50, 171);">文档</a><a href="/wrt/tags/%E8%AF%AD%E6%B3%95/" style="font-size: 1.17em; color: rgb(66, 50, 146);">语法</a><a href="/wrt/tags/Markdown/" style="font-size: 1.15em; color: rgb(156, 67, 117);">Markdown</a><a href="/wrt/tags/%E8%AF%AD%E6%96%87/" style="font-size: 1.15em; color: rgb(50, 50, 50);">语文</a><a href="/wrt/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 1.24em; color: rgb(50, 145, 151);">笔记</a><a href="/wrt/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.15em; color: rgb(53, 161, 50);">前端</a><a href="/wrt/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" style="font-size: 1.15em; color: rgb(180, 102, 173);">计算机</a><a href="/wrt/tags/Codeforces/" style="font-size: 1.28em; color: rgb(50, 50, 73);">Codeforces</a><a href="/wrt/tags/%E5%8C%96%E5%AD%A6/" style="font-size: 1.15em; color: rgb(180, 50, 115);">化学</a><a href="/wrt/tags/%E7%94%9F%E7%89%A9/" style="font-size: 1.15em; color: rgb(50, 50, 101);">生物</a><a href="/wrt/tags/%E7%89%A9%E7%90%86/" style="font-size: 1.15em; color: rgb(130, 109, 164);">物理</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>Archives</span>
+      <a class="card-more-btn" href="/wrt/archives/"
+            title="View More">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/wrt/archives/2026/02/">
+            <span class="card-archive-list-date">
+              2026年02月
+            </span>
+            <span class="card-archive-list-count">9</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/wrt/archives/2026/01/">
+            <span class="card-archive-list-date">
+              2026年01月
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/wrt/archives/2025/12/">
+            <span class="card-archive-list-date">
+              2025年12月
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/wrt/archives/2025/11/">
+            <span class="card-archive-list-date">
+              2025年11月
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/wrt/archives/2025/10/">
+            <span class="card-archive-list-date">
+              2025年10月
+            </span>
+            <span class="card-archive-list-count">3</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/wrt/archives/2025/09/">
+            <span class="card-archive-list-date">
+              2025年09月
+            </span>
+            <span class="card-archive-list-count">5</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/wrt/archives/2025/08/">
+            <span class="card-archive-list-date">
+              2025年08月
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/wrt/archives/2025/07/">
+            <span class="card-archive-list-date">
+              2025年07月
+            </span>
+            <span class="card-archive-list-count">16</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">135</div></div><div class="webinfo-item"><div class="item-name">Runtime :</div><div class="item-count" id="runtimeshow" data-publishDate="2025-04-03T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Total Word Count :</div><div class="item-count">286.3k</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2026-02-21T12:46:27.365Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://ooo.0x0.ooo/2025/07/10/OYFd8I.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;2025 - 2026 By WRT_Partisan</span></div><div class="footer_custom_text">There is no guide to living --- only life itself.</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="chat-btn" type="button" title="Chat" style="display:none"><i class="fas fa-message"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/wrt/js/utils.js"></script><script src="/wrt/js/main.js"></script><script src="/wrt/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  async function loadWaline () {
+    try {
+      const eleGroup = document.querySelectorAll('#recent-posts .waline-comment-count')
+      const keyArray = Array.from(eleGroup).map(i => i.getAttribute('data-path'))
+
+      const res = await fetch(`https://waline-three-ruby.vercel.app/api/comment?type=count&url=${keyArray}`, { method: 'GET' })
+      const result = await res.json()
+      
+      result.data.forEach((count, index) => {
+        eleGroup[index].textContent = count
+      })
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  window.pjax ? loadWaline() : window.addEventListener('load', loadWaline)
+})()</script><script>(() => {
+  const runMermaid = ele => {
+    window.loadMermaid = true
+    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+    ele.forEach((item, index) => {
+      const mermaidSrc = item.firstElementChild
+      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
+      const mermaidID = `mermaid-${index}`
+      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+
+      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
+      const renderMermaid = svg => {
+        mermaidSrc.insertAdjacentHTML('afterend', svg)
+      }
+
+      // mermaid v9 and v10 compatibility
+      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
+    })
+  }
+
+  const codeToMermaid = () => {
+    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
+    if (codeMermaidEle.length === 0) return
+
+    codeMermaidEle.forEach(ele => {
+      const preEle = document.createElement('pre')
+      preEle.className = 'mermaid-src'
+      preEle.hidden = true
+      preEle.textContent = ele.textContent
+      const newEle = document.createElement('div')
+      newEle.className = 'mermaid-wrap'
+      newEle.appendChild(preEle)
+      ele.parentNode.replaceWith(newEle)
+    })
+  }
+
+  const loadMermaid = () => {
+    if (true) codeToMermaid()
+    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
+    if ($mermaid.length === 0) return
+
+    const runMermaidFn = () => runMermaid($mermaid)
+    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
+    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
+  }
+
+  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
+  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+})()</script><script>(() => {
+  const applyThemeDefaultsConfig = theme => {
+    if (theme === 'dark-mode') {
+      Chart.defaults.color = "rgba(255, 255, 255, 0.8)"
+      Chart.defaults.borderColor = "rgba(255, 255, 255, 0.2)"
+      Chart.defaults.scale.ticks.backdropColor = "transparent"
+    } else {
+      Chart.defaults.color = "rgba(0, 0, 0, 0.8)"
+      Chart.defaults.borderColor = "rgba(0, 0, 0, 0.1)"
+      Chart.defaults.scale.ticks.backdropColor = "transparent"
+    }
+  }
+
+  // Recursively traverse the config object and automatically apply theme-specific color schemes
+  const applyThemeConfig = (obj, theme) => {
+    if (typeof obj !== 'object' || obj === null) return
+
+    Object.keys(obj).forEach(key => {
+      const value = obj[key]
+      // If the property is an object and has theme-specific options, apply them
+      if (typeof value === 'object' && value !== null) {
+        if (value[theme]) {
+          obj[key] = value[theme] // Apply the value for the current theme
+        } else {
+          // Recursively process child objects
+          applyThemeConfig(value, theme)
+        }
+      }
+    })
+  }
+
+  const runChartJS = ele => {
+    window.loadChartJS = true
+
+    Array.from(ele).forEach((item, index) => {
+      const chartSrc = item.firstElementChild
+      const chartID = item.getAttribute('data-chartjs-id') || ('chartjs-' + index) // Use custom ID or default ID
+      const width = item.getAttribute('data-width')
+      const existingCanvas = document.getElementById(chartID)
+
+      // If a canvas already exists, remove it to avoid rendering duplicates
+      if (existingCanvas) {
+          existingCanvas.parentNode.remove()
+      }
+
+      const chartDefinition = chartSrc.textContent
+      const canvas = document.createElement('canvas')
+      canvas.id = chartID
+
+      const div = document.createElement('div')
+      div.className = 'chartjs-wrap'
+
+      if (width) {
+        div.style.width = width
+      }
+
+      div.appendChild(canvas)
+      chartSrc.insertAdjacentElement('afterend', div)
+
+      const ctx = document.getElementById(chartID).getContext('2d')
+
+      const config = JSON.parse(chartDefinition)
+
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark-mode' : 'light-mode'
+
+      // Set default styles (initial setup)
+      applyThemeDefaultsConfig(theme)
+
+      // Automatically traverse the config and apply dual-mode color schemes
+      applyThemeConfig(config, theme)
+
+      new Chart(ctx, config)
+    })
+  }
+
+  const loadChartJS = () => {
+    const chartJSEle = document.querySelectorAll('#article-container .chartjs-container')
+    if (chartJSEle.length === 0) return
+
+    window.loadChartJS ? runChartJS(chartJSEle) : btf.getScript('https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js').then(() => runChartJS(chartJSEle))
+  }
+
+  // Listen for theme change events
+  btf.addGlobalFn('themeChange', loadChartJS, 'chartjs')
+  btf.addGlobalFn('encrypt', loadChartJS, 'chartjs')
+
+  window.pjax ? loadChartJS() : document.addEventListener('DOMContentLoaded', loadChartJS)
+})()</script></div><script>window.newestComments = {
+  changeContent: content => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[Image]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[Link]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[Code]') // replace code
+    content = content.replace(/<code>.*?<\/code>/gi, '[Code]') // replace code
+    content = content.replace(/<[^>]+>/g, "") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0, 150) + '...'
+    }
+    return content
+  },
+
+  generateHtml: (array, ele) => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class="aside-list-item">'
+
+        if (true && array[i].avatar) {
+          const imgAttr = 'data-lazy-src'
+          const lazyloadNative = ''
+          result += `<a href="${array[i].url}" class="thumbnail"><img ${imgAttr}="${array[i].avatar}" alt="${array[i].nick}" ${lazyloadNative}></a>`
+        }
+
+        result += `<div class="content">
+        <a class="comment" href="${array[i].url}" title="${array[i].content}">${array[i].content}</a>
+        <div class="name"><span>${array[i].nick} / </span><time datetime="${array[i].date}">${btf.diffDate(array[i].date, true)}</time></div>
+        </div></div>`
+      }
+    } else {
+      result += 'No comments'
+    }
+
+    ele.innerHTML = result
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh(ele)
+  },
+
+  newestCommentInit: (name, getComment) => {
+    const $dom = document.querySelector('#card-newest-comments .aside-list')
+    if ($dom) {
+      const data = btf.saveToLocal.get(name)
+      if (data) {
+        newestComments.generateHtml(JSON.parse(data), $dom)
+      } else {
+        getComment($dom)
+      }
+    }
+  },
+
+  run: (name, getComment) => {
+    newestComments.newestCommentInit(name, getComment)
+    btf.addGlobalFn('pjaxComplete', () => newestComments.newestCommentInit(name, getComment), name)
+  }
+}</script><script>window.addEventListener('load', () => {
+  const keyName = 'waline-newest-comments'
+  const { changeContent, generateHtml, run } = window.newestComments
+
+  const getComment = async (ele) => {
+    try {
+      const res = await fetch('https://waline-three-ruby.vercel.app/api/comment?type=recent&count=6')
+      const result = await res.json()
+      const walineArray = result.data.map(e => {
+        return {
+          'content': changeContent(e.comment),
+          'avatar': e.avatar,
+          'nick': e.nick,
+          'url': e.url + '#' + e.objectId,
+          'date': e.time || e.insertedAt
+        }
+      })
+      btf.saveToLocal.set(keyName, JSON.stringify(walineArray), 10/(60*24))
+      generateHtml(walineArray, ele)
+    } catch (err) {
+      console.error(err)
+      ele.textContent= "Unable to retrieve comments, please check the configuration"
+    }
+  }
+
+  run(keyName, getComment)
+})</script><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script>(() => {
+  window.ChatraID = 'za29DHS9ThQZ5D2Pw'
+  window.Chatra = window.Chatra || function() {
+    (window.Chatra.q = window.Chatra.q || []).push(arguments)
+  }
+
+  btf.getScript('https://call.chatra.io/chatra.js').then(() => {
+    const isChatBtn = true
+    const isChatHideShow = true
+
+    if (isChatBtn) {
+      const close = () => {
+        Chatra('minimizeWidget')
+        Chatra('hide')
+      }
+
+      const open = () => {
+        Chatra('openChat', true)
+        Chatra('show')
+      }
+
+      window.ChatraSetup = { startHidden: true }
+    
+      window.chatBtnFn = () => document.getElementById('chatra').classList.contains('chatra--expanded') ? close() : open()
+
+      document.getElementById('chat-btn').style.display = 'block'
+    } else if (isChatHideShow) {
+      window.chatBtn = {
+        hide: () => Chatra('hide'),
+        show: () => Chatra('show')
+      }
+    }
+  })
+})()</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => fn())
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      true
+        ? (usePjax ? pjax.loadUrl('/wrt/404.html') : window.location.href = '/wrt/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="WHAT DO YOU KNOW WHAT DO YOU PLAY WHAT DO YOU REMEMBER WHAT DO YOU LOVE" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/wrt/js/search/local-search.js"></script></div></div></body></html>
